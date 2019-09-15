@@ -11,8 +11,9 @@ class Song
   end
 
 def self.create 
-Song.new 
-save
+song = Song.new 
+@@all << self 
+song
 end
 end
 
