@@ -11,7 +11,6 @@ class Song
   end
 
 def self.create 
-@@all.each do |name| 
-  if 
+
 end
 
