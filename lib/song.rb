@@ -28,10 +28,12 @@ end
     song 
   end
   
-  def self.find_by_name(name)
-   @@all.find do |song|
-     song.name == name 
+  def self.find_by_name(song)
+   @@all.find do |a|
+     song.name == song 
    end
  end
+ 
+ def self.find_or_create_by_name(song)
 end
 
