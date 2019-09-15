@@ -29,6 +29,6 @@ end
   end
   
   def self.find_by_name(name)
-    song = 
+   @@all.
 end
 
