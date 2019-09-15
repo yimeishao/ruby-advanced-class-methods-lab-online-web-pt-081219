@@ -39,7 +39,6 @@ end
       Song.create_by_name(name)
     else
       Song.find_by_name(name)
-      song.name
     end
   end
   
