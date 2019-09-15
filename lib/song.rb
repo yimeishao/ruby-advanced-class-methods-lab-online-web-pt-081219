@@ -48,6 +48,13 @@ end
     end
   end
   
-  def 
+  def self.new_from_filename(filename)
+    new_array = filename.chomp(".mp3").split(" - ")
+    song = Song.create_by_name(new_array[1])
+    song.artist_name = new_array[0]
+    song
+  end
+  
+  
 end
 
