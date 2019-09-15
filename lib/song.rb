@@ -14,4 +14,5 @@ def self.create
 song = Song.new 
 @@all << self 
 end
+end
 
