@@ -30,10 +30,17 @@ end
   
   def self.find_by_name(song)
    @@all.find do |a|
-     song.name == song 
+     a.name == song 
    end
  end
  
  def self.find_or_create_by_name(song)
+   @@all.find do |a| 
+     if a.name == song 
+       true 
+     else 
+       song.create 
+     end
+   end
 end
 
